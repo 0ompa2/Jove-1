@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6d32581-3b9f-4895-a63e-6ea43e4b18fc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jove/Def_RE2NFA_chatty.py" beforeDir="false" afterPath="$PROJECT_DIR$/jove/Def_RE2NFA_chatty.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

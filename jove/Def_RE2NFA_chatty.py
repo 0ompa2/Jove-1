@@ -94,7 +94,6 @@ precedence = (
 
 def p_expression_plus(t):
     '''expression : expression PLUS catexp'''
-    print("Got a plus token")
     t[0] = mk_plus_nfa(t[1], t[3]) # Union of the two NFAs is returned
     
 def mk_plus_nfa(N1, N2):

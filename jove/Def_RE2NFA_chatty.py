@@ -161,7 +161,10 @@ def p_expression_cat_id(t):
 
 def p_expression_ordy_star(t):
     'ordyexp : ordyexp STAR'
+
     t[0] = mk_star_nfa(t[1])
+    print("Got a " + t[0] + "token")
+
 
 def mk_star_nfa(N):
     # Follow construction from Kozen's book:
@@ -197,14 +200,19 @@ def mk_star_nfa(N):
 
 def p_expression_ordy_paren(t):
     'ordyexp : LPAREN expression RPAREN'
+
     # Simply inherit the attribute from t[2] and pass on
     t[0] = t[2]
+    print("Got a " + t[0] + "token")
 
 #-- * The O -> EPS production
     
 def p_expression_ordy_eps(t):
+
     'ordyexp : EPS'
     t[0] = mk_eps_nfa()
+    print("Got a " + t[0] + "token")
+
 
 def mk_eps_nfa():
     """An nfa with exactly one start+final state
@@ -222,6 +230,7 @@ def mk_eps_nfa():
 def p_expression_ordy_str(t):
     'ordyexp : STR'
     t[0] = mk_symbol_nfa(t[1])
+    print("Got a " + t[0] + "token")
 
 def mk_symbol_nfa(a):
     """The NFA for a single re letter
